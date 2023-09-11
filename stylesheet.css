@@ -1,7 +1,4 @@
 
-* {
-    border:1px solid black;
-}
 
 .img1{   background-image: url(./assets/mike-kenneally-TD4DBagg2wE-unsplash.jpg);
 }
@@ -17,25 +14,24 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-direction: column;
 }
 .logo {
-    display: flex;
-    order: 1;
-    width: 30%;
+    width: 10%;
 }
 .page-links {
-    display: flex;
+
 }
 .icons {
-    display:flex;
+    margin:0;
 }
 .headline {
-    display: flex;
 }
 
 nav li{
     list-style: none;
-    display:inline-block;
+    display:inline;
+    text-align: center;
     padding: 5px;
     
 }
