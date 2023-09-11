@@ -1,8 +1,41 @@
-.container {
 
+* {
+    border:1px solid black;
+}
+
+.img1{   background-image: url(./assets/mike-kenneally-TD4DBagg2wE-unsplash.jpg);
+}
+.img2{
+    background-image: url(./assets/tina-guina-obV_LM0KjxY-unsplash.jpg);
+}
+.img3{
+    background-image: url(./assets/zarak-khan-69ilqMz0p1s-unsplash.jpg);
+}
+
+header{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
 }
 .logo {
     display: flex;
     order: 1;
-    width: 100%;
+    width: 30%;
+}
+.page-links {
+    display: flex;
+}
+.icons {
+    display:flex;
+}
+.headline {
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    display:inline-block;
+    padding: 5px;
+    
 }
