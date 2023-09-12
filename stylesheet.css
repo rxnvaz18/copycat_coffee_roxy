@@ -52,3 +52,8 @@ ul {
 li {
     display: inline;
 }
+button {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+}
