@@ -108,10 +108,10 @@ main {
 .about {
     display:flex;
     flex-wrap: wrap;
-    flex-direction:column;
+    flex-direction:row;
 }
 .about p h2{
-    display:inline;
+    display:block;
     width: 50%;
 }
 
@@ -122,7 +122,7 @@ main {
 }
 footer{
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
     flex-wrap: wrap;
     background-color: black;
     color:aliceblue
@@ -133,4 +133,5 @@ footer li a{
 }
 footer ul {
     list-style: none;
+    display:block;
 }
