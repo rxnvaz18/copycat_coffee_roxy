@@ -33,7 +33,7 @@ header{
     display: block;
 }
 
-.page-links li, a{
+.page-links a{
     list-style: none;
     display:inline;
     text-align: center;
@@ -44,7 +44,7 @@ header{
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
 }
-.icons ul {
+.icons a {
     list-style: none;
     display:inline;
     text-align: center;
@@ -55,11 +55,18 @@ header{
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+.icons ul{
+    list-style: none;
+}
 .page-links ul {
     list-style: none;
 }
-
+.page-links li{
+    display: inline;
+}
+.icons li {
+    display:inline;
+}
 .shop-button {
     color: white;
     background-color: transparent;
@@ -90,25 +97,40 @@ main {
 .join-button {
     color: white;
     background-color: black;
+    width: 10%;
+    display:block;
 }
 .learn-button {
     color: white;
     background-color: black;
+    display:block;
 }
 .about {
     display:flex;
     flex-wrap: wrap;
-    flex-direction:row;
+    flex-direction:column;
 }
-.about p {
-    display:inline-block;
+.about p h2{
+    display:inline;
     width: 50%;
 }
-.about h2 {
-    display: inline-block;
-}
+
 .about img{
     width: 50%;
     height: auto;
     display: inline;
+}
+footer{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    background-color: black;
+    color:aliceblue
+}
+footer li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+footer ul {
+    list-style: none;
 }
