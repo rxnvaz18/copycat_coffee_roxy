@@ -11,10 +11,18 @@ header{
 
 .logo {
     width: 10%;
+    height: 10%;
+    margin: 0 auto;
+    padding: 0px;
 }
-
+.page-links { margin: 0 auto;
+    padding-left: 0%;
+    flex-grow: 1;
+}
 .icons {
-    margin:0;
+    text-align: right;
+    display: inline;
+    flex-grow: 1;
 }
 .headline {
     color:white;
@@ -29,6 +37,7 @@ nav li{
     display:inline;
     text-align: center;
     padding: 5px;
+    margin: 0 auto;
     
 }
 a {
