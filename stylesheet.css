@@ -1,6 +1,6 @@
 
 header{
-    background-image: url(./assets/zarak-khan-69ilqMz0p1s-unsplash.jpg);
+    background-image: url(./assets/tina-guina-obV_LM0KjxY-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,13 +12,16 @@ header{
 .logo {
     width: 10%;
 }
-.page-links {
 
-}
 .icons {
     margin:0;
 }
 .headline {
+    color:white;
+    font-weight:900;
+    font-size: x-large;
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow:1px 1px 1px black;
 }
 
 nav li{
