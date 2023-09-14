@@ -6,23 +6,27 @@ header{
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
 }
 
 .logo {
-    width: 100px;
-    height: 80px;
+    max-width: 20%;
+    max-height: 20%;
     margin: 0 auto;
     padding: 0px;
 }
-.page-links { margin: 0 auto;
-    padding-left: 0%;
-    flex-grow: 1;
+
+.page-links { 
+    display: inline-block;
+
 }
 .icons {
     text-align: right;
     display: inline;
-    flex-grow: 1;
 }
 .headline {
     color:white;
@@ -30,12 +34,14 @@ header{
     font-size: x-large;
     font-family:Arial, Helvetica, sans-serif;
     text-shadow:1px 1px 1px black;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .page-links a{
     list-style: none;
-    display:inline;
+    display:inline-block;
     text-align: center;
     padding: 5px;
     margin: 0 auto;
@@ -75,11 +81,15 @@ header{
     font-size: 16px;
     display: inline-block;
 }
+/* END OF HEADER AND NAV BAR */
+
 main {
     display: flex;
-    flex-wrap:nowrap;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     font-family: Arial, Helvetica, sans-serif;
+    justify-content: flex-start;
+    margin: 0 auto;
 }
 .product-card p{
     font-weight: 900;
@@ -90,11 +100,12 @@ main {
     font-weight: lighter;
 }
 
-.product-card img{
-    width: 40%;
-    height: 20%;
-    display: inline;
+.product-card > img{
+    min-width: 20%;
+    min-height: 20%;
+    justify-content:flex-end;
 }
+
 .join-button {
     color: white;
     background-color: black;
@@ -109,21 +120,21 @@ main {
 }
 .about {
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction:column;
     background-color: whitesmoke;
     font-family:Arial, Helvetica, sans-serif;
 }
+
 .about p h2 strong {
-    display:block;
-    width: 50%;
+  
 }
 
 .about img{
-    width: 50%;
+    width: 30%;
     height: auto;
-    display: inline;
 }
+
 footer{
     display: flex;
     flex-direction:row;
@@ -132,6 +143,9 @@ footer{
     color:white;
     font-family:Arial, Helvetica, sans-serif;
     justify-content: center;
+    align-items: flex-start
+    height: 300px;
+    padding-top: 20px;
 
 }
 footer li a{
@@ -144,11 +158,12 @@ footer ul {
     padding-right: 5px;
     margin: 0 auto;
 }
-footer img{
-    width: 100px;
-    height: 100px;
+.footer-logo {
+    max-width: 30%;
+    max-height: 30%;
     margin: 0 auto;
-    padding: 0px; 
+    padding: 0px;
+    object-fit: contain;
 }
 label{
     border: 1px solid white;
